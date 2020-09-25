@@ -15,20 +15,17 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace UWP
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+    
     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
             this.InitializeComponent();
         }
-        private static readonly string _conn = "HostName=ecwin20-iothub.azure-devices.net;DeviceId=consoleapp;SharedAccessKey=8087yP5qbfLrLRgl7bl7Fn12pLiIGzcO9b8TY62TQCo=";
+        private static readonly string _conn = "HostName=ecwin20-iothub.azure-devices.net;DeviceId=uwp;SharedAccessKey=++bmt4TL7p26xrbOWIaSvmBIH9yvzyTYcg9l50VjW3Q=";
 
         private static readonly DeviceClient deviceClient =
             DeviceClient.CreateFromConnectionString(_conn, TransportType.Mqtt);
