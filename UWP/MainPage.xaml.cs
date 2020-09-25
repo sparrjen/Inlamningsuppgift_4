@@ -34,6 +34,7 @@ namespace UWP
         private void btnSendMessage_Click(object sender, RoutedEventArgs e)
         {
             DeviceService.SendMessageAsync(deviceClient).GetAwaiter();
+            
         }
     }
 }
