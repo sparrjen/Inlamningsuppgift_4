@@ -14,9 +14,7 @@ namespace UWP.Services
         private static readonly Random rnd = new Random();
 
         public static async Task SendMessageAsync(DeviceClient deviceClient)
-        {
-
-            
+        {            
                 var data = new TemperatureModel
                 {
                     Temperature = rnd.Next(15, 35),
@@ -28,10 +26,7 @@ namespace UWP.Services
                 var payload = new Message(Encoding.UTF8.GetBytes(json));
                 await deviceClient.SendEventAsync(payload);
 
-                Console.WriteLine($"Message sent: {json}");
-
-                //Fråga Hans om meddelande
-            
+                Console.WriteLine($"Message sent: {json}");                                    
         }
     }
 }
