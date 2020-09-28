@@ -16,8 +16,7 @@ namespace UWP.Services
         public static async Task SendMessageAsync(DeviceClient deviceClient)
         {
 
-            while (true)
-            {
+            
                 var data = new TemperatureModel
                 {
                     Temperature = rnd.Next(15, 35),
@@ -32,7 +31,7 @@ namespace UWP.Services
                 Console.WriteLine($"Message sent: {json}");
 
                 //Fråga Hans om meddelande
-            }
+            
         }
     }
 }
