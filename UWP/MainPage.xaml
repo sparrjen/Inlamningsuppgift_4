@@ -12,7 +12,7 @@
 
     <Grid Background="#FFEFF4F5">
 
-        <Button x:Name="btnSendMessage" Click="btnSendMessage_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Send Message" FontSize="50" FontFamily="Century Gothic" Background="#33A5B8C3"/>
+        <Button x:Name="btnSendMessage!" Click="btnSendMessage_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="Send Message" FontSize="50" FontFamily="Century Gothic" Background="#33A5B8C3"/>
 
     </Grid>
 </Page>
